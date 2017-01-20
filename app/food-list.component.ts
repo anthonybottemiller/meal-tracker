@@ -12,8 +12,8 @@ import { Food } from './food.model';
     </select>
     <div class="food-item" (click)="editClicked(currentFood)" *ngFor="let currentFood of childFoodList | calories:filterByCalories">
       <ul>
-        <li>"
-        {{currentFood.name}}"
+        <li>
+        <b>"{{currentFood.name}}"</b>
           <ul>
             <li>Calories: {{currentFood.calories}}</li>
             <li>Detail: {{currentFood.details}}</li>
