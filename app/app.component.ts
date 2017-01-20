@@ -11,7 +11,8 @@ import { Food } from './food.model';
 
 export class AppComponent {
 masterFoodList: Food[] = [
-  new Food(100, 'Success fries', 'It works so far have some potatoe!')
+  new Food(100, 'Success fries', 'It works so far have some potatoe!'),
+  new Food(1000, 'Success Whopper', 'It is a good day')
 ];
 
 }
