@@ -11,7 +11,7 @@ import { Food } from './food.model';
    </div>
    <div class="form-group">
     <label>How many calories?</label>
-    <input #newCalories>
+    <input type=number #newCalories>
    </div>
    <div class="form-group">
     <label>Any other details?</label>
