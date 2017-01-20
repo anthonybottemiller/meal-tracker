@@ -5,7 +5,7 @@ import { Food } from './food.model';
   selector: 'food-list',
   template: `
     <ul>
-      <li *ngFor="let currentFood of childFoodList">{{currentFood.name}}
+      <li *ngFor="let currentFood of childFoodList">"{{currentFood.name}}" Calories: {{currentFood.calories}}
       </li>
     </ul>
   `
