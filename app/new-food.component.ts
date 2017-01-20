@@ -5,19 +5,19 @@ import { Food } from './food.model';
   selector: 'new-food',
   template: `
   <h3>New Food</h3>
-   <div>
+   <div class="form-group">
      <label>What did you eat?:</label>
      <input #newName>
    </div>
-   <div>
+   <div class="form-group">
     <label>How many calories?</label>
     <input #newCalories>
    </div>
-   <div>
+   <div class="form-group">
     <label>Any other details?</label>
     <input #newDetail>
    </div>
-   <button (click)="submitForm(newCalories.value, newName.value, newDetail.value);">Add Food</button>
+   <button class="btn btn-primary" (click)="submitForm(newCalories.value, newName.value, newDetail.value);">Add Food</button>
   `
 })
 
