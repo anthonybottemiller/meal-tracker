@@ -10,6 +10,7 @@ import { Food } from './food.model';
       <option value="highCalorie">High Calories</option>
       <option value="lowCalorie">Low Calories</option>
     </select>
+    <h5><em>Click on an item to edit</em></h5>
     <div class="food-item" (click)="editClicked(currentFood)" *ngFor="let currentFood of childFoodList | calories:filterByCalories">
       <ul>
         <li>
