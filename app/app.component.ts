@@ -5,9 +5,13 @@ import { Food } from './food.model';
   selector: 'app-root',
   template: `
   <h1>Meal Tracker</h1>
-  <food-list [childFoodList]="masterFoodList" (clickSender)="editFood($event)"></food-list>
-  <edit-food [childSelectedFood]="selectedFood"></edit-food>
-  <new-food (newFoodSender)="addFood($event)"></new-food>
+  <div class="col-sm-3">
+    <food-list [childFoodList]="masterFoodList" (clickSender)="editFood($event)"></food-list>
+  </div>
+  <div class="col-sm-6">
+    <edit-food [childSelectedFood]="selectedFood"></edit-food>
+    <new-food (newFoodSender)="addFood($event)"></new-food>
+  </div>
   `
 })
 
