@@ -1,7 +1,29 @@
+$primary-color: mediumpurple;
+$food-color: darkblue;
+$new-form-color: rebeccapurple;
+$input-text-color: black;
+
+body {
+  background-color: $primary-color;
+}
+
+input {
+  color : $input-text-color;
+}
+
 .food-item {
   margin: 5px;
-  background-color: darkblue;
+  background-color: $food-color;
   color: white;
-  border: 10px solid darkblue;
+  border: 10px solid $food-color;
+  border-radius: 20px
+}
+
+.new-form {
+  margin: 5px;
+  padding: 20px;
+  background-color: $new-form-color;
+  color: white;
+  border: 10px solid $new-form-color;
   border-radius: 20px
 }
